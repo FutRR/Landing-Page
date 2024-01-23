@@ -344,12 +344,13 @@ main h2{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    z-index: 0;
+    z-index: 1;
 }
 
 .parallax_text{
     position: absolute;
-    z-index: 99;
-    top: 300px;
+    background: transparent;
+    z-index: 2;
+    bottom: 300px;
     left: 300px;
 }
