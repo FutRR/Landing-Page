@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --font-color1: #fff;
+    --font-color2: rgb(37, 37, 37);
+}
+
+*{
+    font-family: 'Poppins';
+}
+
+body{
+    background: radial-gradient(rgb(139, 195, 245), #1294b8);
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+
+nav{
+    color: var(--font-color1);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    display: inline-block;
+}
+
+li a{
+    color: var(--font-color1);
+    font-weight: 500;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 .7rem;
+    transition: opacity 1s ease;
+}
+
+li a:hover{
+    opacity: .5;
+}
+
+.icon_wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+
+}
+
+.icon_wrapper i{
+    margin: .5rem;
+    transition: opacity 1s ease;
+
+}
+
+.icon_wrapper i:hover{
+    opacity: .5;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--font-color2);
+}
+
+header h1{
+    width :20rem;
+}
+
+header p{
+    max-width: 25rem;
+}
+
+.mailto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .7;
+    background-color: #fff;
+    padding: .5rem .8rem;
+    width: auto;
+    height: 2rem;
+    border: none;
+    border-radius: 5000px;
+
+}
+
+.email{
+    width: 25rem;
+    height: 1rem;
+    border: none;
+}
+
+.email:focus{
+    outline: none;
+}
+
+
+.btn{
+    border: none;
+    border-radius: 5000px;
+    padding: .5rem 1rem;
+    background-color: #1372a8;
+    color: var(--font-color1);
+    transition: opacity 1000ms ease;
+}
+
+.btn:hover{
+    
+}
