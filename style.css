@@ -3,7 +3,7 @@
 :root{
     --font-color1: #fff;
     --font-color2: rgb(37, 37, 37);
-    --font-color3: rgb(104, 104, 104);
+    --font-color3: rgb(141, 141, 141);
     --bg: radial-gradient(rgb(139, 195, 245), #1294b8);
 }
 
@@ -336,6 +336,7 @@ main h2{
 
 /* PARALLAX */
 
+
 .parallax{
     background-image: url(/img/parallax.png);
     height: 600px;
@@ -345,12 +346,54 @@ main h2{
     background-size: cover;
     margin: 0;
     z-index: 1;
+    filter: brightness(50%);
 }
 
 .parallax_text{
-    position: absolute;
+    position: relative;
+    bottom: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: transparent;
     z-index: 2;
-    bottom: 300px;
-    left: 300px;
+    text-align: center;
+    color: var(--font-color1);
+}
+
+.parallax_text h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 0rem;
+    align-self: center;
+}
+
+.parallax_text p{
+    font-weight: 400px;
+    font-size: 20px;
+    align-self: center;
+    color: rgb(177, 177, 177);
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.parallax_text a{
+    color: var(--font-color1);
+    border: 1px solid white;
+    border-radius: 10px;
+    align-self: center;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    transition: background-color 1s ease;
+    transition: color 1s ease;
+    transition: transform 1s ease;
+
+}
+
+.parallax_text a:hover{
+    background-color: #fff;
+    color: var(--font-color2);
+    transform: translateY(-10px);
 }
