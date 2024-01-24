@@ -208,7 +208,7 @@ header p{
 .how{
     display: flex;
     flex-direction: column;
-    background-color: #cfcfcf;
+    align-self: center;
     align-self: center;
     width: 100vw;
     margin: 0;
@@ -443,6 +443,10 @@ header p{
     margin: 100px 100px;
 }
 
+.blog_wrapper div{
+    margin: 0 30px;
+}
+
 .blog_wrapper h3{
     font-size: 25px;
     margin-bottom: 1rem;
@@ -466,10 +470,70 @@ header p{
 .blog_wrapper img{
     width: 500px;
     transition: filter 1s;
-
 }
 
 .blog_wrapper img:hover{
     filter: brightness(50%);
+}
+
+/*PRICING*/
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing_wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pricing_intro{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    flex-wrap: nowrap;
+}
+
+.pricing_intro h2{
+    font-size: 30px;
+}
+
+.pricing_intro p{
+    font-size: 20px;
+    color: var(--font-color3);
+}
+
+.count_wrap{
+    display: flex;
+    justify-content: flex-start;
 
 }
+
+.pricing_count{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    margin-right: 9rem;
+}
+
+.pricing_count h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.pricing_count p{
+    font-size: 20px;
+}
+
+.pricing_intro a{
+    text-decoration: none;
+    color: var(--font-color1);
+    border: 1px solid transparent;
+    background-color: rgb(66, 144, 212);
+    border-radius: 15px;
+    padding: 1rem;
+    width: fit-content;
+}
+
