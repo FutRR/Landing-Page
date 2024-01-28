@@ -5,6 +5,8 @@
     --font-color2: rgb(37, 37, 37);
     --font-color3: rgb(141, 141, 141);
     --bg: radial-gradient(rgb(139, 195, 245), #1294b8);
+    --pricing-bg: #3F8EFD;
+
 }
 
 *{
@@ -649,7 +651,21 @@ header p{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+}
 
+.pricing_text h2{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.pricing_text p{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--font-color3);
+    width: 50rem;
 }
 
 
@@ -662,7 +678,7 @@ header p{
     border-radius: 15px;
     flex-wrap: wrap;
     width: 300px;
-    height: 400px;
+    height: 450px;
 }
 
 #promo{
@@ -704,12 +720,17 @@ header p{
 
 .list{
     display: flex;
+    flex-direction: row;
+}
+
+.list_content{
+    display: flex;
     flex-direction: column;
 }
 
-.list li{
-    display: block;
+.list_content li{
     line-height: 2.5rem;
+    width: 8rem;
 }
 
 .fa-circle-check{
@@ -718,4 +739,32 @@ header p{
 
 .fa-circle-xmark{
     color: rgb(192, 22, 22);
+}
+
+.list_info{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list_info li{
+    line-height: 2.5rem;
+    width: 8rem;
+}
+
+.join{
+    position: relative;
+    color: var(--pricing-bg);
+    border: 2px solid var(--pricing-bg);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 1rem 5rem;
+    bottom: -45px;
+    left: 10px;
+}
+
+.join:hover{
+    color: var(--font-color1);
+    background-color: var(--pricing-bg);
 }
