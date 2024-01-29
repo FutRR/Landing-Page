@@ -768,3 +768,28 @@ header p{
     color: var(--font-color1);
     background-color: var(--pricing-bg);
 }
+
+/* ----------------------------------------------------------------------------- FOOTER -------------------------------------------------------------------------------------------*/
+footer{
+    background-color: rgb(34, 43, 63);
+    height: 500px;
+}
+
+.footer_icon{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_icon a{
+    border-radius: 500px;
+    border: 3px solid var(--font-color3);
+    width: 70px;
+    height: 70px;
+
+}
+
+.footer_icon i{
+    font-size: 30px;
+    color: var(--font-color3);
+    text-align: center;
+}
