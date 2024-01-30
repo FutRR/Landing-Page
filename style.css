@@ -50,6 +50,7 @@ nav{
     font-weight: 700;
 }
 
+
 ul{
     margin: 0;
     padding: 0;
@@ -866,9 +867,25 @@ ul.footer_icon li{
 
 @media screen and (min-width: 320px) and (max-width: 768px){
 
+    html{
+        width: 250vw;
+    }
+
+    body{
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        flex-wrap: nowrap;
+    }
+
     header{
-        width: 100vh;
-        height: 200vh;
+        width: 250vw;
+        height: 150vh;
     }    
 
     .header_wrapper{
@@ -880,16 +897,8 @@ ul.footer_icon li{
     }
         
     .mailto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: .7;
-        background-color: #fff;
         padding: .5rem .5rem;
-        width: auto;
         height: 5rem;
-        border: none;
-        border-radius: 5000px;
     }
     
     .email{
@@ -904,6 +913,57 @@ ul.footer_icon li{
     }
     
     nav{
+       flex-direction: column; 
+       align-items: flex-start;
+       width: fit-content;
+       margin-left: 2rem;
+    }
 
+    .logo{
+        font-size: 60px;
     }
+
+    ul li{
+        display: block;
     }
+
+    ul li a{
+        font-size: 30px;
+    }
+
+    .icon_wrapper i{
+        font-size: 30px;
+        margin-top: 2rem;
+    }
+
+    .left{
+        padding: 0;
+    }
+
+    .illu{
+        position: absolute;
+        top: 50px;
+        width: 400px;
+        max-width: 700px;
+    }
+
+    #products{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        margin: 2rem;
+    }
+
+    .profils{
+        flex-direction: column;
+    }
+
+}
