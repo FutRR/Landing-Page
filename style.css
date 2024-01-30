@@ -884,8 +884,8 @@ ul.footer_icon li{
     }
 
     header{
-        width: 250vw;
-        height: 150vh;
+        width: 100%;
+        height: fit-content;
     }    
 
     .header_wrapper{
@@ -943,8 +943,7 @@ ul.footer_icon li{
     .illu{
         position: absolute;
         top: 50px;
-        width: 400px;
-        max-width: 700px;
+        
     }
 
     #products{
@@ -964,6 +963,10 @@ ul.footer_icon li{
 
     .profils{
         flex-direction: column;
+    }
+
+    .how{
+        width: 100%;
     }
 
 }
