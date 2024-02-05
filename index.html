@@ -17,16 +17,23 @@
 
             <nav>
                 <p class="logo">Kucra</h1>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#products">FEATURES</a></li>
-                    <li><a href="#">CLIENT</a></li>
-                    <li><a href="#pricing">PRICING</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#team">ABOUT</a></li>
-                    <li><a href="#blog">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#products">FEATURES</a></li>
+                        <li><a href="#">CLIENT</a></li>
+                        <li><a href="#pricing">PRICING</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#team">ABOUT</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="menuburger" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>    
                 <div class="icon_wrapper">
                     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
                     <a href="https:/www.twitter.com" target="_blank" ><i class="fa-brands fa-twitter fa-lg"></i></a>
@@ -36,7 +43,7 @@
 
 
             <div class="header_wrapper">
-                <div class="left">
+                <div class="header_text">
                         <h1>We are StartUp Creative Kucra Agency</h1>
                         <p>Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
                     <div class="mailto">
@@ -65,8 +72,8 @@
 
             <section id="products">
 
-                    <h2 class="product_h2" >Product Features</h2>
-                    <p class="product_p" >It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
+                    <h2>Product Features</h2>
+                    <p>It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
 
                 <div class="cards">
                 
@@ -92,8 +99,8 @@
                 </div>
                 
                     <div class="how">
-                        <h2 class="how_h2" >How It Works ?</h2>
-                        <p class="how_p" >It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
+                        <h2>How It Works ?</h2>
+                        <p>It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
                     </div>
 
             </section>
@@ -371,6 +378,19 @@
             <p>2022 © Kucra - Landing Page template by Pitchforest</p>
         </div>
     </footer>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+        const menuburger = document.querySelector(".menuburger")
+        const navlinks = document.querySelector(".nav_links")
+
+        menuburger.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
 
 </body>
 </html>
