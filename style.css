@@ -447,8 +447,6 @@ header p{
 
 }
 
-
-
 .profil figure:hover .rs{
     transform: translateX(30px) translateY(40px);
 }
@@ -909,6 +907,7 @@ ul.footer_icon li{
 
 @media screen and (min-width: 900px) and (max-width: 1700px){
 
+    /* // NAVIGATION BAR // */
 
     .menuburger{
         position: fixed;
@@ -916,16 +915,23 @@ ul.footer_icon li{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         right: 60px;
         z-index: 99;
-        padding: 5px;
         background : #fff;
         backdrop-filter: blur(8px);
         border-radius: 50px;
     }
 
+    .menuburger .bar1, .bar2, .bar3{
+        width: 35px;
+        height: 5px;
+        background: #1294b8;
+        margin: 2px;
+        transition: 400ms;
+    }
+    
     .nav_links{
         position: fixed;
         display: flex;
@@ -937,12 +943,12 @@ ul.footer_icon li{
         border-radius: 15px;
         top: 100px;
         right: 10px;
-        margin-top: -1000px;
+        margin-right: -1000px;
         transition: 400ms ease;
     }
 
     .mobile-menu{
-        margin-top: 0;
+        margin-right: 0;
     }
     
     .nav_links ul{
@@ -1048,8 +1054,8 @@ ul.footer_icon li{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         right: 60px;
         z-index: 99;
         padding: 5px;
@@ -1069,12 +1075,12 @@ ul.footer_icon li{
         border-radius: 15px;
         top: 100px;
         right: 10px;
-        margin-top: -1000px;
+        margin-right: -1000px;
         transition: 400ms ease;
     }
 
     .mobile-menu{
-        margin-top: 0;
+        margin-right: 0;
     }
     
     .nav_links ul{
